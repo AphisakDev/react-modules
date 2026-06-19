@@ -1,5 +1,5 @@
 import Button from "./common/Button";
-import { Accordion } from "@chakra-ui/react"
+import { Accordion, Span } from "@chakra-ui/react"
 
 export function Header() {
     return (
@@ -141,7 +141,7 @@ export function FAQ() {
                     <Accordion.Item key={index} value={item.value}>
 
                         <Accordion.ItemTrigger>
-                            <span>{item.title}</span>
+                            <Span>{item.title}</Span>
                             <Accordion.ItemIndicator/>
                         </Accordion.ItemTrigger>
                         
